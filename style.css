@@ -15,7 +15,7 @@
         list-style: none;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: large;
-        background-image: linear-gradient(black,rgba(0,0,0,0));
+        background-image: linear-gradient(black,rgba(0, 0, 0, 0.363));
         top: 0;
         left: 0;
         width: 100%;
@@ -39,4 +39,29 @@ margin-top: 0;
     .about{
         color: white;
         font-size: 50px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        background-color: rgb(32, 30, 30);
+        margin-bottom: 250px;
+
     }
+
+    .about img{
+        display: flex;
+        width: 800px;
+        border-radius: 30px
+    }
+    .choisan{
+        margin-top: 60px;
+        display: inline-flex;
+    }
+   .choisan p{
+       font-size: 40px;
+       color: white;
+       margin-right: 0px;
+       width: 50%;
+   }
+ .choisan img{
+     position: relative; z-index: 9; width: 70%; top: 0; left: 0"
+ }
