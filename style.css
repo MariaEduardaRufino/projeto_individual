@@ -1,0 +1,42 @@
+    body{
+        overflow-x: hidden;
+        margin: 0;
+    }
+    .banner{
+        margin: 0;
+        background-size: cover;
+        padding-right: 0;
+    }
+    .menu{
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+        color: white;
+        list-style: none;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: large;
+        background-image: linear-gradient(black,rgba(0,0,0,0));
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 5000;
+position: fixed;
+margin-top: 0;
+        
+    }
+    .menu img{
+        width: 80px;
+    }
+    .ateez_logo img{
+        margin-top: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        margin: auto;
+        
+    }
+    .about{
+        color: white;
+        font-size: 50px;
+    }
