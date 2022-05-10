@@ -129,3 +129,14 @@
 
         width: 50px;
     }
+    .conteudo{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .conteudo button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+    }
