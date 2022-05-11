@@ -1,74 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="style.css" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="banner">
-      <video
-        style="position: fixed; z-index: -1; width: 100%; top: 0; left: 0"
-        class="background_video"
-        muted
-        autoplay
-        loop
-      >
-        <source src="./videozinho.mp4" />
-      </video>
-    </div>
-    <ul class="menu">
-     <li>
-         <img src="./logomenu-removebg-preview.png">
-     </li>
-     <li><a href="#linkSobre" style="text-decoration:none ; color:white">
-         Sobre o grupo
-        </a>
-     </li>
-     <li>
-         Clipes
-     </li>
-     <li><a href="integrantes.html" style="text-decoration:none ; color:white">
-         Integrantes
-        </a>
-     </li>
-     <li>
-      <a href="login.html"><img id="sair" src="./sair.ico"></a>
-  </li>
-    </ul>
-    <div class="ateez_logo">
-        <img src="./ateezlogo-removebg-preview.png" alt="">
-        
-    </div>
-    <div id="linkSobre" class="about">
-       <p> Sobre o grupo
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui facere impedit nihil laudantium maiores dicta nam ducimus consequatur? Voluptates quo sunt inventore? Nemo molestias dolore necessitatibus labore odit?</p>
-      <img src="./ateezAbout.jpg" alt="">
-    </div>
-    <div class="minigameContainer">
 
-      <div class="conteudo">
-        <h1>Beat Maker</h1>
-        <button onclick="aud1()">1</button>
-        <button onclick="aud2()">2</button>
-        <button onclick="aud3()">3</button>
-        <button onclick="aud4()">4</button>
-        <button onclick="aud5()">5</button>
-        <button onclick="aud6()">6</button>
-        <button onclick="aud7()">7</button>
-        <button onclick="aud8()">8</button>
-        <button onclick="aud9()">9</button>
-        <button onclick="aud10()">10</button>
-      </div>
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
 
+<body>
+ 
+  <div class="navbar">
+    <div>
+        <a href="home.html"><img src="./logomenu-removebg-preview.png"></a>
     </div>
-    
-  </body>
-  <script>
-    function aud1(){
-      
-    }
-  </script>
+
+    <div class="menu">
+    <a href="#linkSobre">Sobre o grupo</a>
+    <a href="">Clipes</a>
+    <a href="integrantes.html">Integrantes</a>
+    </div>
+</div>
+
+  <div class="banner">
+    <video style="position: fixed; z-index: -1; width: 100%; top: 0; left: 0" class="background_video" muted autoplay
+      loop>
+      <source src="./videozinho.mp4" />
+    </video>
+
+  </div>
+  
+  <div id="linkSobre" class="about">
+    <p> Sobre o grupo
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui facere impedit nihil laudantium maiores dicta nam
+      ducimus consequatur? Voluptates quo sunt inventore? Nemo molestias dolore necessitatibus labore odit?</p>
+    <img src="./ateezAbout.jpg" alt="">
+  </div>
+
+</body>
+
 </html>

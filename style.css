@@ -9,29 +9,49 @@
         padding-right: 0;
     }
 
-    .menu {
+
+
+    .navbar {
         display: flex;
-        justify-content: space-around;
-        align-items: center;
-        color: white;
-        list-style: none;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: large;
-        background-image: linear-gradient(black, rgba(0, 0, 0, 0.363));
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 5000;
-        position: fixed;
-        margin-top: 0;
-
+        flex-direction: row;
+        justify-content: space-between;
+        position: fixed; z-index: 9000; width: 100%; top: 0; left: 0;
+        background-image: linear-gradient(black,rgba(0, 0, 0, 0));
     }
 
-    .menu img {
+    .navbar img {
         width: 80px;
+        margin-left: 50px;
+        
     }
-    .menu #sair{
-        width:40px;
+    .menu button{
+        border-style: groove;
+        border-radius: 5px;
+        border-color: white;
+        background-color: transparent;
+        color: white;
+        margin-top: 10px;
+        margin-right: 20px;
+        cursor: pointer;
+        font-size: 19px;
+        border: 0;
+    
+    }
+    .menu{
+        margin-top: 10px;
+    }
+    .menu a{
+        margin-left: 20px;
+        margin-right: 20px;
+        color: white;
+        text-decoration: none;
+    }
+    .menu #btn_principal{
+        background-color: rgb(255, 255, 255);
+        color: black;
+        border-color:rgb(189, 186, 186);
+        border: 0;
+        
     }
 
     .ateez_logo img {
@@ -46,19 +66,19 @@
 
     .about {
         color: white;
-        font-size: 50px;
+        font-size: 30px;
         display: flex;
         justify-content: left;
         align-items: center;
         background-color: rgb(32, 30, 30);
         margin-bottom: 250px;
+        margin-top: 700px;
 
     }
 
     .about img {
         display: flex;
         width: 800px;
-        border-radius: 30px
     }
 
     .choisan {
@@ -82,7 +102,14 @@
 
     }
 
+    .container {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+    }
+
     .cadastro {
+        width: 50%;
         display: flex;
         border-radius: 20px;
         justify-content: center;
@@ -129,12 +156,14 @@
 
         width: 50px;
     }
-    .conteudo{
+
+    .conteudo {
         display: flex;
         flex-direction: column;
 
     }
-    .conteudo button{
+
+    .conteudo button {
         display: flex;
         justify-content: center;
         align-items: center;
