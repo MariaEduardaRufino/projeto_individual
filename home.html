@@ -7,59 +7,114 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
-  <script src="js/script.js" defers></script>
-  
+
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
- 
+
   <div class="navbar">
     <div>
-        <a href="home.html"><img src="./logomenu-removebg-preview.png"></a>
+      <a href="home.html"><img src="./img/logomenu-removebg-preview.png"></a>
     </div>
 
     <div class="menu">
-    <a href="#linkSobre">Sobre o grupo</a>
-    <a href="">Clipes</a>
-    <a href="integrantes.html">Integrantes</a>
-    <a href="login.html"><img src="./sair.ico"></a>
+      <a href="#linkSobre">Sobre o grupo</a>
+      <a href="#clipes">Clipes</a>
+      <a href="integrantes.html">Integrantes</a>
+      <a href="login.html"><img src="./img/sair.ico"></a>
     </div>
-</div>
+  </div>
 
   <div class="banner">
     <video style="position: fixed; z-index: -1; width: 100%; top: 0; left: 0" class="background_video" muted autoplay
       loop>
-      <source src="./videozinho.mp4" />
+      <source src="./video/videozinho.mp4" />
     </video>
 
   </div>
-  <div class="clipes">
-    <div class="vid">
-    <video muted autoplay loop>
-      <source src="./videozinho.mp4">
-    </video>
-  </div>
 
-  </div>
-  
   <div id="linkSobre" class="about">
     <p> Sobre o grupo
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui facere impedit nihil laudantium maiores dicta nam
       ducimus consequatur? Voluptates quo sunt inventore? Nemo molestias dolore necessitatibus labore odit?</p>
-    <img src="./ateezAbout.jpg" alt="">
+    <img src="./img/ateezAbout.jpg" alt="">
+  </div>
+  <div class="container_slider">
+    <div class="slider" id="clipes">
+      <div class="slides">
+        <input type="radio" name="radio_btn" id="radio1">
+        <input type="radio" name="radio_btn" id="radio2">
+        <input type="radio" name="radio_btn" id="radio3">
+
+        <div class="slide first">
+          <img src="./img/logomenu-removebg-preview.png" alt="imagem1">
+
+        </div>
+        <div class="slide">
+          <img src="./img/ateezAbout.jpg" alt="imagem2">
+
+        </div>
+        <div class="slide">
+          <img src="./img/ateezStage.jpg" alt="imagem3">
+
+        </div>
+        <div class="navigation_auto">
+          <div class="auto_btn1"></div>
+          <div class="auto_btn2"></div>
+          <div class="auto_btn3"></div>
+
+        </div>
+
+
+      </div>
+      <div class="manual_navigation">
+        <label for="radio1" class="manual_btn"></label>
+        <label for="radio2" class="manual_btn"></label>
+        <label for="radio3" class="manual_btn"></label>
+
+      </div>
+    </div>
   </div>
   <div class="comeback">
     <h1>Próximo Comeback</h1>
-  <div class="containerTimer">
-    
-    <div id="timer">
-      
+    <div class="containerTimer">
+      <p id="demo"></p>
+      <script>
+        //definindo a data da contagem
+        var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+
+        // atualizar contagem para diminuir a cada 1 segundo
+        var x = setInterval(function () {
+
+          // utilizar a data de hoje
+          var now = new Date().getTime();
+
+          // achar distância entre o agora e a data selecionada acima
+          var distance = countDownDate - now;
+
+          // calculo de dias, horas, minutos e segundos
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          // mostrar o resultado utilizando
+          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+
+          // Se a conta terminou exibir
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+      </script>
 
     </div>
-
   </div>
-</div>
-  
+
 </body>
 
 </html>
