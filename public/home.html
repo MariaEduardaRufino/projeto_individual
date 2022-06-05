@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  
+ 
+
+</head>
+
+<body>
+
+  <div class="navbar">
+    <div>
+      <a href="home.html"><img src="./img/logomenu-removebg-preview.png"></a>
+    </div>
+
+    <div class="menu">
+      <a href="#linkSobre">Sobre o grupo</a>
+      <a href="#clipes">Clipes</a>
+      <a href="integrantes.html">Integrantes</a>
+      <a href="login.html"><img src="./img/sair.ico"></a>
+    </div>
+  </div>
+
+  <div class="banner">
+    <video style="position: fixed; z-index: -1; width: 100%; top: 0; left: 0" class="background_video" muted autoplay
+      loop>
+      <source src="./video/videozinho.mp4" />
+    </video>
+
+  </div>
+
+  <div id="linkSobre" class="about">
+    <p>ATEEZ (에이티즈) é um boy group formado pela KQ Entertainment e teve sua estreia oficial dia 24 de outubro de 2018. Possui oito integrantes, sendo eles: Hongjoong, Seonghwa, Yunho, Yeosang, San, Mingi, Wooyoung e Jongho. O debut foi feito com as músicas ‘Treasure’ e ‘Pirate King’. Em julho de 2019 o grupo assinou com a RCA Records.</p>
+    <img src="./img/ateezAbout.jpg" alt="">
+  </div>
+  <div class="container_slider">
+    <div class="slider" id="clipes">
+      <div class="slides">
+        <input type="radio" name="radio_btn" id="radio1">
+        <input type="radio" name="radio_btn" id="radio2">
+        <input type="radio" name="radio_btn" id="radio3">
+
+        <div class="slide first">
+          <iframe width="800" height="400" src="https://www.youtube.com/embed/2NArH91kHoQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+        <div class="slide">
+          <iframe width="800" height="400" src="https://www.youtube.com/embed/K7LY9Ta0eiY?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+        <div class="slide">
+          <iframe width="800" height="400" src="https://www.youtube.com/embed/xtcVwuauVV0?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+        <div class="navigation_auto">
+          <div class="auto_btn1"></div>
+          <div class="auto_btn2"></div>
+          <div class="auto_btn3"></div>
+
+        </div>
+
+
+      </div>
+      <div class="manual_navigation">
+        <label for="radio1" class="manual_btn"></label>
+        <label for="radio2" class="manual_btn"></label>
+        <label for="radio3" class="manual_btn"></label>
+
+      </div>
+    </div>
+  </div>
+  <div class="comeback">
+    <h1>Próximo Comeback</h1>
+    <div class="containerTimer">
+      <p id="demo"></p>
+      <script>
+        //definindo a data da contagem
+        var countDownDate = new Date("Nov 5, 2022 15:37:25").getTime();
+
+        // atualizar contagem para diminuir a cada 1 segundo
+        var x = setInterval(function () {
+
+          // utilizar a data de hoje
+          var now = new Date().getTime();
+
+          // achar distância entre o agora e a data selecionada acima
+          var distance = countDownDate - now;
+
+          // calculo de dias, horas, minutos e segundos
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          // mostrar o resultado utilizando
+          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+
+          // Se a conta terminou exibir
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+      </script>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
