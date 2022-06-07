@@ -17,7 +17,7 @@ var sqlServerConfig = {
     }
 }
 
-// CONEXÃO DO MYSQL WORKBENCH (LOCAL)
+// CONEXÃO DO MYSQL WORKBENCH (LOCAL) // utilizei local
 var mySqlConfig = {
     host: "localhost",
     user: "root",
