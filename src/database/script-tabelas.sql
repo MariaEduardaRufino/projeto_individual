@@ -18,9 +18,9 @@ senha varchar(50));
 
 
 
-create table integrante(
-idIntegrante int primary key auto_increment,
-nomeIntegrante varchar(45),
+create table musica(
+idMusica int primary key auto_increment,
+nomeMusica varchar(100),
 fkUsuario int,
 foreign key (fkUsuario) references usuario (id)
 );
